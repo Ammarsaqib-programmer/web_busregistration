@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Registration - Page 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="center" >
+    <h2>Bus Registration</h2>
+    <form action="page2.php" method="POST">
+        <div class="myInputs" >
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+            <div class="myInputs" >
+            
+                <label for="cnic">CNIC:</label>
+                <input type="text" id="cnic" name="cnic" maxlength="13" minlength="13" required>
+            </div>
+            
+            <div class="myInputs" >
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+        <div class="myInputs" >
+            
+            <label for="destination">Bus Destination:</label>
+            <select name="destination" required>
+                <option value="Karachi to Sukkur">Karachi to Sukkur</option>
+                <option value="Bhira Road to Kashmore">Bhira Road to Kashmore</option>
+                <option value="Sui Gas to Rohri">Sui Gas to Rohri</option>
+                <option value="Shikarpur to Lahore">Shikarpur to Lahore</option>
+                <option value="Peshawar to Gilgit">Peshawar to Gilgit</option>
+            </select>
+        </div>
+        <div class="myInputs" >
+            
+            <label for="date">Date of Travel:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+<div class="btn" >
+
+    <button type="submit">Register</button>
+</div>
+        <div class="footer">
+            <a href="already_booked.php">Already booked a seat?</a>
+        </div>
+
+
+    </form>
+</div>
+</body>
+</html>
